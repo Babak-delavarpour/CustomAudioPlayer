@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <link href="../Css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="AudioPlayer.css" rel="stylesheet" />
+    <script src="AudioPlayer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var audioManager = new AudioPlayerManager();
+            audioManager.AddPlayer($("#player1"));
+            audioManager.AddPlayer($("#player2"));
+        });
+    </script>
+</head>
+<body>
+    <div data-audio-id="1" data-audio-section="poster" id="player1" role="player" class="player">
+        <div class="player-btn">
+            <i role="player-btn-backward" class="fa fa-backward" aria-hidden="true"></i>
+            <i role="player-btn-play" class="fa fa-play" aria-hidden="true"></i>
+            <i role="player-btn-forward" class="fa fa-forward" aria-hidden="true"></i>
+        </div>
+        <div class="player-indicator">
+            <label role="player-label-current" class="startDuration">0:00</label>
+            <div role="player-indicator" class="indicator">
+                <div role="player-indicator-head" class="indicator-head"></div>
+            </div>
+            <label role="player-label-duration" class="endDuration">2:35</label>
+        </div>
+    </div>
+    <div data-audio-id="2" data-audio-section="poster" id="player2" role="player" class="player">
+        <div class="player-btn">
+            <i role="player-btn-backward" class="fa fa-backward" aria-hidden="true"></i>
+            <i role="player-btn-play" class="fa fa-play" aria-hidden="true"></i>
+            <i role="player-btn-forward" class="fa fa-forward" aria-hidden="true"></i>
+        </div>
+        <div class="player-indicator">
+            <label role="player-label-current" class="startDuration">0:00</label>
+            <div role="player-indicator" class="indicator">
+                <div role="player-indicator-head" class="indicator-head"></div>
+            </div>
+            <label role="player-label-duration" class="endDuration">2:35</label>
+        </div>
+    </div>
+</body>
+
+</html>
